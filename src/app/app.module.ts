@@ -11,6 +11,14 @@ import { SearchbarComponent } from './Homework1/searchbar/searchbar.component';
 import { TopbannerComponent } from './Homework1/topbanner/topbanner.component';
 import { CategorymenuComponent } from './Homework1/categorymenu/categorymenu.component';
 import { TodolistComponent } from './Homework2/todolist/todolist.component';
+import { HeaderComponent } from './Homework3/header/header.component';
+import { MenuComponent } from './Homework3/menu/menu.component';
+import { BannerComponent } from './Homework3/banner/banner.component';
+import { CollectionComponent } from './Homework3/collection/collection.component';
+import { DownloadComponent } from './Homework3/download/download.component';
+import { BlogComponent } from './Homework3/blog/blog.component';
+import { FooterComponent } from './Homework3/footer/footer.component';
+import { HmComponent } from './Homework3/hm/hm.component';
 
 
 @NgModule({
@@ -23,7 +31,15 @@ import { TodolistComponent } from './Homework2/todolist/todolist.component';
     SearchbarComponent,
     TopbannerComponent,
     CategorymenuComponent,
-    TodolistComponent
+    TodolistComponent,
+    HeaderComponent,
+    MenuComponent,
+    BannerComponent,
+    CollectionComponent,
+    DownloadComponent,
+    BlogComponent,
+    FooterComponent,
+    HmComponent
   ],
   imports: [
     BrowserModule,
