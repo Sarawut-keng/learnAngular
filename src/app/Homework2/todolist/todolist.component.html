@@ -1,0 +1,11 @@
+<h2>My Tasks Today</h2>
+<div>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}    <button (click)="deleteList(item)">-</button></li>
+    </ul>
+</div>
+<div>
+    <label>Task : </label>
+    <input [(ngModel)]="newTask" type="text" value=""/>
+    <button (click)="addList()">ADD</button>
+</div>

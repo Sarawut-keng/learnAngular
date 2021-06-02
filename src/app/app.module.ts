@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CountingComponent } from './counting/counting.component';
@@ -9,6 +10,8 @@ import { NavbarComponent } from './Homework1/navbar/navbar.component';
 import { SearchbarComponent } from './Homework1/searchbar/searchbar.component';
 import { TopbannerComponent } from './Homework1/topbanner/topbanner.component';
 import { CategorymenuComponent } from './Homework1/categorymenu/categorymenu.component';
+import { TodolistComponent } from './Homework2/todolist/todolist.component';
+
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { CategorymenuComponent } from './Homework1/categorymenu/categorymenu.com
     NavbarComponent,
     SearchbarComponent,
     TopbannerComponent,
-    CategorymenuComponent
+    CategorymenuComponent,
+    TodolistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
