@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
       categorymenu works!
     </p>
   `,
-  styles: [
+  styles: [`
+    p {
+      padding-top: 25px;
+    }
+  `
   ]
 })
 export class CategorymenuComponent implements OnInit {

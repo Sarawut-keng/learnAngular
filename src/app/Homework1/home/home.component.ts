@@ -24,15 +24,17 @@ import { TopbannerComponent } from '../topbanner/topbanner.component';
       text-align:center;
     }
     .banner {
-      background-color: gray;
+      text-align: center;
+      background-color: #E24E3B;
       width: 80%;
-      height: 50px;
+      height: 100px;
       margin-left: 10%;
     }
     .menu {
-      background-color: gray;
+      text-align: center;
+      background-color: lightblue;
       width: 80%;
-      height: 50px;
+      height: 70px;
       margin-left:10%;
     }
   `]

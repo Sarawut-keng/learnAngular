@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
       topbanner works!
     </p>
   `,
-  styles: [
+  styles: [`
+    p {
+      padding-top: 40px;
+    }
+  `
   ]
 })
 export class TopbannerComponent implements OnInit {
