@@ -1,0 +1,17 @@
+.menu {
+    padding-top: 10px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.grid {
+    font-size: 12px;
+    text-decoration: underline;
+    width: 70%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
