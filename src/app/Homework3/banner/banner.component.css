@@ -1,0 +1,48 @@
+.banner {
+    padding-top: 10px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-banner {
+    background-color: #D0F800;
+    width: 70%;
+    height: 350px;
+    text-align: center;
+}
+.inner-banner h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0;
+}
+.inner-banner h1 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+.inner-banner p {
+    font-weight: 400;
+}
+/* ------------------------------------------------- */
+.menu ul {
+    padding-top: 10px;
+    list-style: none;
+    text-align: center
+}
+.menu ul li {
+    display: inline;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+.menu ul li a {
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 30px;
+}

@@ -7,6 +7,7 @@
 .menu-top {
     width: 100%;
     font-size: 12px;
+    font-weight: 200;
 }
 .grid {
     align-items: center;
@@ -81,6 +82,7 @@
 .search i {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    font-weight: bolder;
 }
 /* ----------------------------------------------------- */
 a {
