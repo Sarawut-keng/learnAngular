@@ -28,6 +28,9 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+.grid-right img {
+    width: 12px;
+}
 /* ---------------------------------------------------- */
 .middle {
     padding-top: 10px;
