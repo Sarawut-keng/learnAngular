@@ -44,6 +44,7 @@
     background-color: white;
     color: black;
     padding: 10px 20px;
+    cursor: pointer;
 }
 .container button:hover {
     background-color: gainsboro;
@@ -102,4 +103,5 @@
     background-color: white;
     color: black;
     padding: 10px 20px;
+    cursor: pointer;
 }
