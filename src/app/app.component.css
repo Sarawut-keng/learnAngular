@@ -4,3 +4,13 @@ html, body {
     border: 0;
     font-family: 'Sarabun', sans-serif;
 }
+.box {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -100px;
+}

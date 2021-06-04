@@ -1,11 +1,19 @@
-<h2>My Tasks Today</h2>
-<div>
-    <ul>
-        <li *ngFor="let item of list">{{ item }}    <button (click)="deleteList(item)">-</button></li>
-    </ul>
-</div>
-<div>
-    <label>Task : </label>
-    <input [(ngModel)]="newTask" type="text" value=""/>
-    <button (click)="addList()">ADD</button>
+<div class="box">
+    <h2>To Do Lists</h2>
+    <div class="task">
+        <app-task
+        *ngFor="let task of tasks"
+        [task]="task"
+        (OnDeleted)="deleteTask($event)"></app-task>
+    </div>
+    <div class="space"></div>
+    <div class="box-form">
+        <h3>Add task:</h3>
+        <div class="form">
+            <label>Name: </label>
+            <input type="text" [(ngModel)]="name"><br>
+            <label>Description: </label>
+            <input type="text" [(ngModel)]="description">
+        </div>
+        <button (click)="addTask()">ADD</button>
 </div>

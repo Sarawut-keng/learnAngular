@@ -20,6 +20,7 @@ import { BlogComponent } from './Homework3/blog/blog.component';
 import { FooterComponent } from './Homework3/footer/footer.component';
 import { HmComponent } from './Homework3/hm/hm.component';
 import { MycomponentComponent } from './lab-generate/mycomponent/mycomponent.component';
+import { TaskComponent } from './Homework2/task/task.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { MycomponentComponent } from './lab-generate/mycomponent/mycomponent.com
     BlogComponent,
     FooterComponent,
     HmComponent,
-    MycomponentComponent
+    MycomponentComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

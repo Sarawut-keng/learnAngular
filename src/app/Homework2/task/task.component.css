@@ -1,0 +1,19 @@
+.box {
+    text-align: center;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    text-align: left;
+}
+.button {
+    text-align: right;
+
+}
