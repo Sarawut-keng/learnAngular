@@ -19,6 +19,7 @@ import { DownloadComponent } from './Homework3/download/download.component';
 import { BlogComponent } from './Homework3/blog/blog.component';
 import { FooterComponent } from './Homework3/footer/footer.component';
 import { HmComponent } from './Homework3/hm/hm.component';
+import { MycomponentComponent } from './lab-generate/mycomponent/mycomponent.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { HmComponent } from './Homework3/hm/hm.component';
     DownloadComponent,
     BlogComponent,
     FooterComponent,
-    HmComponent
+    HmComponent,
+    MycomponentComponent
   ],
   imports: [
     BrowserModule,
