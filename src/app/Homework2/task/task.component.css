@@ -1,11 +1,15 @@
 .box {
     text-align: center;
-    border-bottom: 1px solid rgb(161, 161, 161);
+    background-color: #F2F4F9;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .content {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 220px 200px;
     grid-template-rows: 30px;
     align-items: center;
     justify-content: center;
@@ -16,4 +20,29 @@
 .button {
     text-align: right;
 
+}
+button {
+    width: 40px;
+    height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+button:hover {
+    background-color: #ff6262;
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
 }

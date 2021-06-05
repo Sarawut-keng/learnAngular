@@ -4,7 +4,7 @@ html, body {
     border: 0;
     font-family: 'Sarabun', sans-serif;
 }
-.box {
+.center {
     text-align: center;
     justify-content: center;
     align-items: center;
