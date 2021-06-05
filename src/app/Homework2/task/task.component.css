@@ -5,6 +5,17 @@
     margin-bottom: 5px;
     padding-top: 5px;
     padding-bottom: 10px;
+    cursor: pointer;
+}
+.selected {
+    text-align: center;
+    background-color: #39458A;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0px 8px 15px rgba(132, 0, 255, 0.1);
 }
 
 .content {

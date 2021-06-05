@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, QueryList, ViewChildren, NgModule } from '@angular/core';
+import { Component, Input, OnInit, QueryList, ViewChildren, NgModule, Output, EventEmitter } from '@angular/core';
 import { Task } from '../task';
 import { TaskComponent } from '../task/task.component';
 import { FormsModule } from '@angular/forms';
@@ -17,6 +17,7 @@ export class TodolistComponent implements OnInit {
   public id: number = 1;
   public name!: string;
   public description!: string;
+  public isSelected: boolean = false;
 
   addTask() {
     if (this.name == '') {
@@ -42,11 +43,30 @@ export class TodolistComponent implements OnInit {
     };
   };
 
+  showDetail(taskComponent: TaskComponent) {
+    this.isSelected = true;
+    this.todolist.forEach(p => { p.isSelected = false; });
+    taskComponent.isSelected = true;
+    for (let i = 0; i < this.tasks.length; i++) {
+      if (this.tasks[i].id == taskComponent.task.id) {
+        this.name = taskComponent.task.name;
+        this.description = taskComponent.task.description;
+      }
+    }
+  }
+
+  unSelected() {
+    this.isSelected = false;
+    this.todolist.forEach(p => { p.isSelected = false; });
+    this.name = '';
+    this.description = '';
+  }
+
   constructor() {
     this.tasks.push({
       id: 1,
-      name: "bas",
-      description: "none"
+      name: "test",
+      description: "This is description."
     })
   }
 

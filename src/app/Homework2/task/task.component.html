@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box" (click)="detail()" [class.selected]="isSelected" >
     <div class="content">
         <div class="text">
             <p><i class="las la-hand-point-right"></i> {{ task.name }}</p>

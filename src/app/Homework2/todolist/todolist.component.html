@@ -1,15 +1,16 @@
 
-<div class="center">
+<div class="center" (clickOutside)="unSelected()">
     <div class="box">
         <h2>TO DO LISTS</h2>
         <div class="task">
             <app-task
             *ngFor="let task of tasks"
             [task]="task"
-            (OnDeleted)="deleteTask($event)"></app-task>
+            (OnDeleted)="deleteTask($event)"
+            (OnSelected)="showDetail($event)"></app-task>
         </div>
         <div class="space"></div>
-        <div class="box-form">
+        <div *ngIf="isSelected == false" class="box-form">
             <h3>ADD TASK</h3>
             <div class="form">
                 <label>Name: </label>
@@ -18,5 +19,10 @@
                 <input type="text" [(ngModel)]="description">
             </div>
             <button (click)="addTask()">ADD</button>
+        </div>
+        <div *ngIf="isSelected == true" class="box-detail">
+            <h3 class="head">TASK:  <span class="detailed">{{ name }}</span></h3>
+            <h3 class="head">DESCRIPTION:  <span class="detailed">{{ description }}</span></h3>
+        </div>
     </div>
 </div>

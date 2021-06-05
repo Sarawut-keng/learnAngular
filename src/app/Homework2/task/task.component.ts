@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Task } from '../task';
+import { TodolistComponent } from '../todolist/todolist.component';
 
 @Component({
   selector: 'app-task',
@@ -8,13 +9,12 @@ import { Task } from '../task';
 })
 export class TaskComponent implements OnInit {
 
-  @Input()
-  task!: Task;
+  @Input() task!: Task;
 
-  @Output()
-  OnDeleted: EventEmitter<Task> = new EventEmitter();
+  @Output() OnDeleted: EventEmitter<Task> = new EventEmitter();
+  @Output() OnSelected: EventEmitter<TaskComponent> = new EventEmitter();
 
-  isDeleted!: boolean;
+  isSelected!: boolean;
 
   constructor() { 
   }
@@ -22,9 +22,17 @@ export class TaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  detail() {
+    this.OnSelected.emit(this);
+  }
 
   delete() {
     this.OnDeleted.emit(this.task);
   };
+
+  unSelected() {
+    this.isSelected = false;
+  }
+
 
 }

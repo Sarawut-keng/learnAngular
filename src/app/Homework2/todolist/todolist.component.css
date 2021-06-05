@@ -10,7 +10,6 @@
     margin-left: -100px;
 }
 .box {
-    color:black;
     background-color: #ffffff;
     width: 500px;
     height: 650px;
@@ -84,5 +83,26 @@ button:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateY(-5px);
+}
+.box-detail {
+    text-align: left;
+    margin-left: 12px;
+    height: 250px;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.head {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #39458A;
+}
+.detailed {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
 }
