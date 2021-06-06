@@ -63,11 +63,6 @@ export class TodolistComponent implements OnInit {
   }
 
   constructor() {
-    this.tasks.push({
-      id: 1,
-      name: "test",
-      description: "This is description."
-    })
   }
 
   ngOnInit(): void {
