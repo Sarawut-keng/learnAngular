@@ -1,4 +1,4 @@
-# LearnAngular
+# LearnAngular (Todolist, Counting, and H&M)
 
 This repo is contains of some tiny project of my own using the angular
 
